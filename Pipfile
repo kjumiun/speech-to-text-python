@@ -3,11 +3,20 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
+[[source]]
+url = "https://download.pytorch.org/whl/cu116"
+verify_ssl = true
+name = "pytorch-cu116"
+
 [packages]
 google-cloud-speech = "*"
 librosa = "*"
 speechrecognition = "*"
 mecab-python3 = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+whisper = {git = "https://github.com/openai/whisper.git"}
 
 [dev-packages]
 
