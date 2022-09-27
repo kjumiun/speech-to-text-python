@@ -4,7 +4,7 @@ import speech_recognition
 
 recognizer = speech_recognition.Recognizer()
 
-jvs = ""
+jvs = r""
 
 replace_word = str.maketrans("", "", "、。 \u3000")
 
@@ -27,8 +27,8 @@ for speaker, transcripts, speeches in corpus:
             continue
     print(f'\nspeaker: {speaker}')
     with open(os.path.join(speaker, 'transcripts_hypothesis.txt'), 'w', encoding='utf8') as hypothesis:
-        for i in range(len(speech)):
-            print("\rRecognizing speeches... {} %".format((i+1)*100//len(speech)), end="")
+        for i in range(len(speeches)):
+            print("\rRecognizing speeches... {} %".format((i+1)*100//len(speeches)), end="")
             with speech_recognition.AudioFile(speeches[i]) as source:
                 audio = recognizer.record(source)
             result = recognizer.recognize_google(audio, language='ja-JP')#.translate(replace_word)
