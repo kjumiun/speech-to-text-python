@@ -45,8 +45,8 @@ def diffLines(rows, origin_st, target_st):
             num_replace+=i2-i1
             #print('replace',s1[i1:i2], i1, i2, s2[j1:j2], j1, j2)
 
-    print(str(rows)+"行目 origin:"+str1)
-    print(str(rows)+"行目 target:"+str2)
+    print(str(rows)+"行目 origin:"+origin_st)
+    print(str(rows)+"行目 target:"+target_st)
     print(str(rows)+"行目 diff  :"+','.join(diff))
     print("文字数:"+str(num_charas) + \
             "  削除語,挿入後,置換後:"+str(num_delete)+","+str(num_insert)+","+str(num_replace)+ \
@@ -54,31 +54,31 @@ def diffLines(rows, origin_st, target_st):
             )
     return num_charas, (num_delete+num_insert+num_replace)
 
-####実行前のチェック##############################################################################################
-##コマンドライン引数のチェック
-#コマンドの引数が仕様通り
-if len(sys.argv) == 3:    
-    if (".txt" in sys.argv[1]) and  (".txt" in sys.argv[2]):
-        pass
-    else:
-        print("input_file extension does not match '.txt'")
-        sys.exit()
-#コマンドの引数が合わない場合は中断
-else:
-    print("usage: python cer.py [original_file.txt]  [target_file.txt]")
-    sys.exit()
+# ####実行前のチェック##############################################################################################
+# ##コマンドライン引数のチェック
+# #コマンドの引数が仕様通り
+# if len(sys.argv) == 3:    
+#     if (".txt" in sys.argv[1]) and  (".txt" in sys.argv[2]):
+#         pass
+#     else:
+#         print("input_file extension does not match '.txt'")
+#         sys.exit()
+# #コマンドの引数が合わない場合は中断
+# else:
+#     print("usage: python cer.py [original_file.txt]  [target_file.txt]")
+#     sys.exit()
 
-##ファイルの行数チェック
-with open(sys.argv[1],'r') as f:
-    lines1 = [s.strip() for s in f.readlines()]
-    num_rows1=len(lines1)
-with open(sys.argv[2],'r') as f:
-    lines2 = [s.strip() for s in f.readlines()]
-    num_rows2=len(lines2)
+# ##ファイルの行数チェック
+# with open(sys.argv[1],'r') as f:
+#     lines1 = [s.strip() for s in f.readlines()]
+#     num_rows1=len(lines1)
+# with open(sys.argv[2],'r') as f:
+#     lines2 = [s.strip() for s in f.readlines()]
+#     num_rows2=len(lines2)
 
-if num_rows1 != num_rows2:
-    print("error: Number of lines is different [original_file.txt]  [target_file.txt]")
-    sys.exit()
+# if num_rows1 != num_rows2:
+#     print("error: Number of lines is different [original_file.txt]  [target_file.txt]")
+#     sys.exit()
 
 
 ####メイン処理##############################################################################################
