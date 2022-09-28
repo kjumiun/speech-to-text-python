@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "acfb2a9456f91570c52f507a6c506416abca4d605a164fafc232edfa194f4fd6"
+            "sha256": "5ebf5c9bdced1c2393d0f86c61d3b44c8bb23d7a5832089350ec8c49db751c87"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -128,13 +128,12 @@
             "markers": "python_version >= '3.6'",
             "version": "==2.1.1"
         },
-        "colorama": {
+        "commonmark": {
             "hashes": [
-                "sha256:854bf444933e37f5824ae7bfc1e98d5bce2ebe4160d46b5edf346a89358e99da",
-                "sha256:e6c6b4334fc50988a639d9b98aa429a0b57da6e17b9a44f0451f930b6967b7a4"
+                "sha256:452f9dc859be7f06631ddcb328b6919c67984aca654e5fefb3914d54691aed60",
+                "sha256:da2f38c92590f83de410ba1a3cbceafbc74fee9def35f9251ba9a971d6d66fd9"
             ],
-            "markers": "platform_system == 'Windows'",
-            "version": "==0.4.5"
+            "version": "==0.9.1"
         },
         "decorator": {
             "hashes": [
@@ -179,11 +178,11 @@
         },
         "google-auth": {
             "hashes": [
-                "sha256:516e6623038b81430dd062a1a25ecd24f173d7c15cdf4e48a9e78bc87e97aeec",
-                "sha256:53bdc0c2b4e25895575779caef4cfb3a6bdff1b7b32dc38a654d71aba35bb5f8"
+                "sha256:98f601773978c969e1769f97265e732a81a8e598da3263895023958d456ee625",
+                "sha256:f12d86502ce0f2c0174e2e70ecc8d36c69593817e67e1d9c5e34489120422e4b"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4, 3.5'",
-            "version": "==2.11.1"
+            "version": "==2.12.0"
         },
         "google-cloud-speech": {
             "hashes": [
@@ -260,11 +259,11 @@
         },
         "huggingface-hub": {
             "hashes": [
-                "sha256:6395f26aaf44bbb4a73d3e14aca228fa39534696f651c6c82a6347f8c9f5950b",
-                "sha256:7a588046bdeb84e7bc99b3da58bbb4312a56d94ba51ebc60dfe610c18b3d0b9f"
+                "sha256:1c7ec31b837db090abdf60c3e008e8d8569d47d976671699adb880aacf60d491",
+                "sha256:71c6ca3014cbf1245cafbc0b426a27e0ff0465853b4f85aefcd2863f61f1dc2d"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==0.9.1"
+            "version": "==0.10.0"
         },
         "idna": {
             "hashes": [
@@ -578,6 +577,14 @@
             ],
             "version": "==2.21"
         },
+        "pygments": {
+            "hashes": [
+                "sha256:56a8508ae95f98e2b9bdf93a6be5ae3f7d8af858b43e02c5a2ff083726be40c1",
+                "sha256:f643f331ab57ba3c9d89212ee4a2dabc6e94f117cf4eefde99a0574720d14c42"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==2.13.0"
+        },
         "pyparsing": {
             "hashes": [
                 "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb",
@@ -741,6 +748,14 @@
             ],
             "version": "==0.4.2"
         },
+        "rich": {
+            "hashes": [
+                "sha256:2eb4e6894cde1e017976d2975ac210ef515d7548bc595ba20e195fb9628acdeb",
+                "sha256:63a5c5ce3673d3d5fbbf23cd87e11ab84b6b451436f1b7f19ec54b6bc36ed7ca"
+            ],
+            "index": "pypi",
+            "version": "==12.5.1"
+        },
         "rsa": {
             "hashes": [
                 "sha256:90260d9058e514786967344d0ef75fa8727eed8a7d2e43ce9f4bcf1b536174f7",
@@ -820,13 +835,13 @@
         },
         "soundfile": {
             "hashes": [
-                "sha256:2d17e0a6fc2af0d6c1d868bafa5ec80aae6e186a97fec8db07ad6af29842fbc7",
-                "sha256:4555438c2c4f02b39fea2ed40f6ddeda88a80cd1ee9dd129be4d5f5134698cc2",
-                "sha256:490cff42650733d1832728b937fe99fa1802896f5ef4d61bcf78cf7ebecb107b",
-                "sha256:5e342ee293b896d31da67617fe65d0bdca217af193991b0cb6052353b1e0e506",
-                "sha256:b361d4ac1519a2e516cabafa6bf7e93492f999f35d7d25350cd87fdc3e5cb27e"
+                "sha256:08d9636815692f332e042990d449e79b888d288f0752226d8602e91523a0a29b",
+                "sha256:12f66fe9dcddedaa6c808bc3e104fc67fcee59dc64214bf7f43605e69836c497",
+                "sha256:9e6a62eefad0a7f856cc8f5ede7f1a0c196b65d2901c00fffc74a3d7e81d89c8",
+                "sha256:a4ab6f66ad222d8e144dcb6abc73fbb867c11da2934b677f9b129778a6c65112",
+                "sha256:f4e4f832b1958403fb9726eeea54e0ebf1c7fc2599ff296a7ab1ac062f8048c9"
             ],
-            "version": "==0.10.3.post1"
+            "version": "==0.11.0"
         },
         "speechrecognition": {
             "hashes": [
@@ -967,11 +982,11 @@
         },
         "transformers": {
             "hashes": [
-                "sha256:8f06d0dbdb95717fc4a48c61d876f25a35ca67e95851581c681fe4e6d1cf9f94",
-                "sha256:b9834aa01979778c16130ad260e41d314f4c3a65930bdc40b1232833c988280b"
+                "sha256:4f3b81578683cbabe06c68240d096997026f950ae4fdcd40566c2b84cf875cf7",
+                "sha256:bbdd0271d86b23e86b4ad83b38e82681105dd6b080e142b16af5f5f3b68fefc4"
             ],
             "markers": "python_version >= '3.7'",
-            "version": "==4.22.1"
+            "version": "==4.22.2"
         },
         "typing-extensions": {
             "hashes": [
@@ -991,7 +1006,7 @@
         },
         "whisper": {
             "git": "https://github.com/openai/whisper.git",
-            "ref": "5d8d3e75a4826fe5f01205d81c3017a805fc2bf9"
+            "ref": "62fe7f1009a534986ac1d32a4aef8c244d029c28"
         }
     },
     "develop": {}

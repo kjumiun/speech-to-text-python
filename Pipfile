@@ -17,6 +17,7 @@ torch = "*"
 torchvision = "*"
 torchaudio = "*"
 whisper = {git = "https://github.com/openai/whisper.git"}
+rich = "*"
 
 [dev-packages]
 
