@@ -2,6 +2,7 @@ import os
 import glob
 import whisper
 import speech_recognition
+from time import sleep
 
 print('initializing...')
 model = whisper.load_model("large")
@@ -29,10 +30,15 @@ def google_speech_recognition_sst(speeches: list, out_path: str) -> None:
             with speech_recognition.AudioFile(speeches[i]) as source:
                 audio = recognizer.record(source)
             result = ''
-            try:
-                result = recognizer.recognize_google(audio, language='ja-JP')#.translate(replace_word)
-            except speech_recognition.UnknownValueError:
-                print(" Google Speech Recognition could not understand audio")
+            for _ in range(3):
+                try:
+                    result = recognizer.recognize_google(audio, language='ja-JP')#.translate(replace_word)
+                except speech_recognition.UnknownValueError:
+                    print(" Google Speech Recognition could not understand audio")
+                    sleep(1)
+                    continue
+                else:
+                    break
             hypothesis.write(':'.join([os.path.basename(speeches[i]).split('.')[0], result])+'\n')
 
 def main() -> None:
