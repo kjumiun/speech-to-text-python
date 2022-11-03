@@ -20,11 +20,11 @@ total_diff_chara=0
 
 for speaker, transcripts, hypothesis in corpus:
     print(f'speaker: {speaker}')
-    for i in range(len(transcripts)):
-        r_a, r_t = transcripts[i].split(':')
-        for j in range(len(hypothesis)):
-            h_a, h_t = hypothesis[j].split(':')
-            if r_a[-3:] == h_a[-3:]:
+    for i in range(len(hypothesis)):
+        h_a, h_t = hypothesis[i].split(':')
+        for j in range(len(transcripts)):
+            r_a, r_t = transcripts[j].split(':')
+            if r_a in h_a:
                 break
         else:
             continue
